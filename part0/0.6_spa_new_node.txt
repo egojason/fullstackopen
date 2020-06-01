@@ -1,0 +1,15 @@
+title spa new note
+note over browser:
+browser executes the event handler
+that pushes the new note to local notes array
+and renders notes to display
+and sends a post request to server
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over server:
+server pushes the new note to the notes array
+end note
+
+server-->browser: 201 Created
